@@ -7,7 +7,7 @@ import pandas as pd
 c = configparser.ConfigParser()
 c.read('config.ini')
 
-KEEP_COLS = ['CITY', 'STATE', 'ZIPCODE', 'FAC_NAME', 'LONGITUDE', 'LATITUDE', 
+KEEP_COLS = ['FAC_ID', 'POINT_ID', 'CITY', 'STATE', 'ZIPCODE', 'FAC_NAME', 'LONGITUDE', 'LATITUDE', 
              'FAC_TYPE', 'MODE_BUS', 'MODE_RAIL', 'MODE_AIR', 'MODE_FERRY', 'MODE_BIKE',
              'MODES_SERV']
 
