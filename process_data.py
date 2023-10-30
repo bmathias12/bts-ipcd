@@ -32,6 +32,9 @@ def main():
         print('Output file already exists. Please delete it first.')
         sys.exit(1)
     
+    # Lowercase columns
+    df.columns = [x.lower() for x in df.columns]
+
     # Write output
     df.to_csv(c['default']['output_path'], index=False)
 
